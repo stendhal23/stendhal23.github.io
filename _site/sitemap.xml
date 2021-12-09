@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://0.0.0.0:4000/%E6%97%A0%E9%94%81%E9%98%9F%E5%88%97/</loc>
+<lastmod>2018-06-03T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/FLP/</loc>
+<lastmod>2019-05-02T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>http://0.0.0.0:4000/TestBlog/</loc>
 <lastmod>2020-02-08T00:00:00+08:00</lastmod>
 </url>
@@ -18,5 +26,8 @@
 </url>
 <url>
 <loc>http://0.0.0.0:4000/posts/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/docs/A/</loc>
 </url>
 </urlset>

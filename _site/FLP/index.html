@@ -1,0 +1,699 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Flp - MyBLOG</title>
+<meta name="description" content="stendhal23 FLP impossibility 证明解析">
+
+
+  <meta name="author" content="First Lastname">
+  
+  <meta property="article:author" content="First Lastname">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MyBLOG">
+<meta property="og:title" content="Flp">
+<meta property="og:url" content="http://0.0.0.0:4000/FLP/">
+
+
+  <meta property="og:description" content="stendhal23 FLP impossibility 证明解析">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-05-02T00:00:00+08:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://0.0.0.0:4000/FLP/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://0.0.0.0:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MyBLOG Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          MyBLOG
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://0.0.0.0:4000/">
+        <img src="/assets/images/bio-photo.jpg" alt="First Lastname" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://0.0.0.0:4000/" itemprop="url">First Lastname</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>My awesome biography constrained to a sentence or two goes here.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Flp">
+    <meta itemprop="description" content="stendhal23FLP impossibility 证明解析">
+    <meta itemprop="datePublished" content="2019-05-02T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://0.0.0.0:4000/FLP/" class="u-url" itemprop="url">Flp
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          8 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h1 id="stendhal23">stendhal23</h1>
+<h2 id="flp-impossibility-证明解析">FLP impossibility 证明解析</h2>
+
+<p><a href="https://travis-ci.org/joemccann/dillinger"><img src="https://travis-ci.org/joemccann/dillinger.svg?branch=master" alt="Build Status" /></a></p>
+
+<ul>
+  <li>✨Magic ✨</li>
+</ul>
+
+<h1 id="术语与符号">术语与符号</h1>
+<h2 id="system-model">system model</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>atomic broadcast :
+        In particular, an “atomic
+    broadcast” capability is assumed, so a process can send the same message in one
+    step to all other processes with the knowledge that if any nonfaulty process receives
+    the message, then all the nonfaulty processes will.
+        Every message is eventually
+    delivered as long as the destination process makes infinitely many attempts to
+    receive, but messages can be delayed, arbitrarily long, and delivered out of order.  
+
+process             Each process p has a one-bit input register xp, an output register yp with values in {b, 0, 1}, and an unbounded amount of internal storage 
+output regitser     in initial states, the output register starts with value b.         // the output register is “write-once.”  只能被写一次
+decision state      The states in which the output register has value 0 or 1 are distinguished as being decision states. 
+
+
+message buffer      // 这个是用来给前面提到的 assume atomic broadcast 来建模的。
+message             A message is a pair (p, m), where p is the name of the destination process and m is a “message value”
+                    from a fixed universe M. 
+message buffer      The message system maintains a multiset, called the message buffer, of messages that have been sent but not yet delivered. // delivered 在下面定义
+send(p, m)          Places (p, m) in the message buffer; 
+receive(p)          Deletes some message (p, m) from the buffer and returns m, in which case we say (p, m) is delivered, or returns the special null marker ∅
+                    and leaves the buffer unchanged. 
+                    // 返回 m 表示 send 给 p 的 m is delivered,  返回 空 表示 没有 delivered 。 另外, 即使 message buffer 里有 m, receive(p) 也允许返回 空。 但只能返回 infinite 次数的空。
+                    // 也就是最终一个 non faulty process 一定会在有限长的时间内得到消息 m,
+configuration       A configuration of the system consists of the internal state of each process, together with the contents of the message buffer.
+initial configuration   An initial configuration is one in which each process starts at an initial state and the message buffer is empty. 
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="术语与符号继续">术语与符号(继续):</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>m                   message 的简写 
+p                   process 的简写 
+step                A step takes one configuration to another and consists of a primitive step by a single process p.
+                    Let C be a configuration. The step occurs in two phases.
+                    第一步: receive, 第二步, 根据 p 的状态, 与 event (p, m), p 进入新的 state 
+event               Since processes are deterministic, the step is completely determined by the pair e = (p, m), which we call an event. (This “event” should be thought of as the receipt of m by p.) 
+C                   Configuration  的简写
+e                   event 的简称    // e = (p, m)
+e(C)                e(C) denotes the resulting configuration, and we say that e can be applied to C.
+                    Note that the event (p, ∅) can always be applied to C.
+                    这主要是意味着: so it is always possible for a process to take another step.
+σ                   schedule. A schedule from C is a finite or infinite sequence σ of events that can be applied, in turn, starting from C.       // 一个是 sequence of events 即 σ = e1e2e3...
+run                 The associated sequence of steps is called a run.                                                                             // 一个是 sequence of steps
+σ(C)                denote the resulting configuration, which is said to be reachable from C.
+reachable           σ(C)   denote the resulting configuration, which is said to be reachable from C.
+accessable          A configuration reachable from some initial configuration is said to be accessible 
+</code></pre></div></div>
+
+<hr />
+<h1 id="证明的整体脉络">证明的整体脉络:</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>证明 Lemma 1,  提出 THEOREM 1 (最后才证明),  证明 Lemma 2,  证明 Lemma 3 
+最终用反证法, 证明如果真的存在 totally correct 的  P, 那么总是能在 P 中构造一个反例证明这个 P 不满足其定义.  即证明 THEOREM 1
+</code></pre></div></div>
+
+<hr />
+<h1 id="lemma-1-相关">Lemma 1 相关</h1>
+
+<p>Lemma 1:      <br />
+    “commutativity” property of schedules.      // 这条引理是证明 σ 满足有条件的”交换律”。  交换律是指这种:  a+b = b+a,  ab=ba
+    大致意思是说 以某个 C 为起点(并没有说是 initial configuration),  如果 σ1 σ2 中涉及的 processes 没有交集时, 按顺序 apply σ1  σ2 得到 C3, 那么按顺序 apply σ2 σ1 也同样得到 C3,
+    这是有条件的:
+        If the sets of processes taking steps in σ1 and σ2, respectively, are disjoint, 
+    这个在直觉上是很容易理解的. 相当于 σ1 与 σ2 分别涉及的 process 没有交集时, σ1(σ2(C)) = σ2(σ1(C))</p>
+
+<hr />
+<h1 id="theorem-1-相关">THEOREM 1 相关</h1>
+
+<h2 id="术语与符号-1">术语与符号</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>decision value v    decision value  A configuration C has decision value v if some process p is in a decision state with yp = v. 
+partially correct   (1) No accessible configuration has more than one decision value.                   // 这里的意思是说, C has decision values v1, v2, .....,  但必然有 v1=v2=...
+                    (2) For each v ∈ {0, 1}, some accessible configuration has decision value v.       // 这是在说,这整个系统对于每一个decison value 都是确实可达的, 0 也有可能, 1 也有可能。 
+                                                                                                     //这样规定是为了 rule out 了"所有 process 不管输入message是什么,全选 yp=0" 这样的 trivial 算法
+nonfaulty           A process p is nonfaulty in a run provided that it takes infinitely many steps, and
+                    it is faulty otherwise.     // 这意味着, faulty process 会执行 finite steps, 于是 process p 执行 0 次也是满足 faulty 定义的, 后面会用到。
+admissible          A run is admissible provided that at most one process is        // 最多有一个 faulty p 的 run 叫做 admissible run,
+                    faulty and that all messages sent to nonfaulty processes are eventually received.
+deciding            A run is a deciding run provided that some process reaches a decision state in that run.
+
+totally correct     A consensus protocol P is "totally correct in spite of one fault" if it is partially
+                    correct, and every admissible run is a deciding run.
+                    // Paxos 就是 partially correct, 但不是 totally correct. 因为不是 every admissible run is a deciding run // paxos 理论上 may never reach a decision, 但是如果它 reach 了, 则必然是正确的
+</code></pre></div></div>
+
+<h2 id="theorem-1">THEOREM 1:</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>THEOREM 1. No consensus protocol is totally correct in spite of one fault. 
+</code></pre></div></div>
+
+<h2 id="证明-反证法">证明, 反证法</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>这里只是提出了 THEOREM 1, 也即本文的最终证明目标。 证明方式是 通过 Lemma 1, Lemma 2, Lemma 3 与反证法推出矛盾
+</code></pre></div></div>
+
+<hr />
+<h1 id="lemma-2-相关">Lemma 2 相关</h1>
+
+<h2 id="继续术语与符号">继续术语与符号</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>V                   let V be the set of decision values of configurations reachable from C.
+bivalent            |V|= 2      // 直观来说, 就是指当系统状态为 C 时, 我们尚不能确定最终系统会停在哪个 decision 上.  此时我们称 C 为 bivalent; 
+univalent           |V|= 1      // 直观来说, 就是指当系统状态为 C 时, 我们已经能确定最终系统会停在某个 decision 上.  此时我们称 C 为 univalent; 
+                                    // 实际上只有 0-valent 和 1-valent  因为 yp 取值范围为 {b, 0, 1} 而只有 0, 1 才造成 p 进入 decision state  ## LEMMA 2:
+    P has a bivalent initial configuration.
+</code></pre></div></div>
+
+<h2 id="证明过程">证明过程:</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PROOF. Assume not. 
+那么即对于 totally correct P, 我们假设 P 不存在  a bivalent initial configuration.  
+定义 adjacent:        // 指 C1, C2 对比, 只有 p 的 input register xp 的值不一样时, 称 C1 adjacent to C2
+    Let us call two initial configurations 
+    adjacent if they differ only in the initial value x&lt;p&gt;, of a single process p.
+
+后果是:
+    所有的 initial Configuration 能用 adjacent 关系串起来(连通图), 图上相邻的任意两个 C1, C2 是 adjacent 的。 
+    我们之前 假设了 P 没有 bivalent initial configuration, 则:
+        initial configurations 里:
+        C1, C2, ... Cn   要么是 0-valent, 要么是 1-valent, 而不能是 bivalent,  
+    这导致, 必然某一个 0-valent 的 Cx 与  1-valent 的 Cy 是 adjacent 的, 就叫它们 C0, C1 好了。 我们将 C0 --&gt; C1 的 adjacent 定义中的那个 process 称为 p, C0 与 C1 的唯一差别就是 p 的 inital value xp 不同. 
+    然后构造一个 admissible deciding run. // 必然存在, 因为 P totally correct 的定义中的第二点:  every admissible run is a deciding run.
+    我们让 p takes no steps, // 这里满足 p faulty 的定义, 当我们构造的这个 run 满足只有 p 是 faulty 时, 该 run 满足 admissible 定义, 于是该 run 是 deciding run. 
+    然后考虑 从 C0 出发的, p takes no steps 的, 某个 deciding run     
+    令这个过程的 schedule 为 σ, 则 σ 也能被 apply 到 C1 上, 并且这两个 run 结束后, Configuration 是完全一样的除了各自的 p 的 xp, 由于 p takes no step, 
+    所以它们的 p 的 output register yp 都是 {b, 0, 1} 中的 b, 即 p 没有到达 decision state, 即 σC0 的 decision = σC1 的 decision .  // 因为 p 以外的 process 的 yp 都是一样的 
+    则两个 run 的 decision 都为 v,
+    而 v 只有两种情况, 0 或者 1, 
+    为 0 时,    C1 is bivalent 因为它的 |V| = 2   // 因为根据假设("P 没有 bivalent initial configuration"), 对于 1-valent 的 C1, 我们却构造了一个 run 使 C1 能得到 decison v = 0, 矛盾了。
+    为 1 时,    C0 is bivalent 因为它的 |V| = 2,  // 同理 
+无论如何都矛盾, 所以假设("P 没有 bivalent initial configuration")是不成立的:  
+    P has a bivalent initial configuration.   LEMMA 2 证明完毕 
+</code></pre></div></div>
+
+<hr />
+<h1 id="lemma-3-相关">Lemma 3 相关</h1>
+
+<h2 id="lemma-3-的证明很复杂了-连-lemma-3-的陈述都挺复杂的-lemma-3-是为后面的最终证明中构造一个-bivalent--bivalent--bivalent--infinite---提供理论依据">LEMMA 3 的证明很复杂了。 连 LEMMA 3 的陈述都挺复杂的。 LEMMA 3 是为后面的最终证明中构造一个 bivalent —&gt; bivalent —&gt; bivalent –&gt; …infinite…   提供理论依据。</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>大意是说:
+    从某个 bivalent configuration  C 开始,       //没有说是 initial configuration
+    可以构造某个 configuration 集合大D, 则大D中必然包含 bivalent 的 configuration.
+是这样定义 大D 的:
+    先定义 任意 event e,  然后定义集合 大E, 其元素为 σ(C) 其中 σ 不包含 e,
+    而 大D 为 大E 的对应, 其元素为 e(E)    E属于大E
+
+证明: 反证法。
+    假设 D 中不包含 bivalent,
+    1) 第一步证明 大D 中必然: 既包含 0-valent 又包含 1-valent      //必须要证明, 因为 不包含 bivalent 可以是 只包含 0-valent, 我们要根除这种可能性。
+        是这样证明大D中同时存在 0,1 valent 的:
+        从 bivalent 的 C 出发。必然能到某个 0-valent, 命其为 E0, 如果 E0 满足大E集合的元素的定义, 则 D0 = e(E0) 在 大D 中, 即 D 中存在 0-valent, 如果 E0 不满足大E集合元素的定义,
+        则 E0 可以写成 (σ1eσ2)(C)  //σ1中不包含e//  变换一下就是 eσ2(σ1C) , 而 σ1C 是满足大E集合元素的定义的, 则 D' = e(σ1C) 且 D' 属于大D, 而且 σ2(D') = E0 ,
+        而 D' 不是 bivalent 的, 所以 D' 只能是 0-valent 的。 即无论 E0 是哪种形式, 都能推出 D 中一定包含 0-valent。
+        同理对于 1-valent 的 E1,  能推出 大D 中一定包含 1-valent。
+
+    2) 定义 neighbor 的概念, 指只间隔一个 任意 event 的两个 Cx, Cy,
+        则 大E 中, 从 C 到 E' 这个路径上, 每步的两个 configuration E1, E2 都可以被看成是相邻, 还可往回走, 最终必然能覆盖 大E 中的全部元素。
+        而 Dx = e(E1),  Dy = e(E2)
+        我们要证明 必然存在  Dx 是 0-valent 而 Dy 是 1-valent 的情况,      // 即存在 Cx Cy 为 neighbour 时, Dx, Dy 分别为 0-valent 和 1-valent, 这个结论很重要, 是我们后面的两张图的直接依据。
+        反证:
+            如果不存在, 则当 Dx 是 0-valent 时, Dy 也必是 0-valent, 而走 neighbour 会覆盖整个 大E, 也即对应地覆盖整个 大 D, 这意味着大D 中只有 0-valent , 矛盾。
+                        当 Dx 是 1-valent 时, 同理。
+        所以 必然存在 neighbour C0, C1 属于大E, 其对应的 D0, D1, 满足 D0 是 0-valent, D1 是 1-valent
+    3) 论文中的两张图。
+        其实只有一张 base 图, 就是:
+                C0
+             e /   \e'
+             D0     C1
+                     \e
+                      D1
+        当 e' 与 e 对应的 p' 与 p 不相干, 即 p' != p 时, 根据 LEMMA 1 能直接画 D0 --(apply e')到--&gt; D1, 的虚线, 并得出矛盾。       // 因为 D0 的 successor 只能是 0-valent 的。
+        当 e' 与 e 对应的 p' 与 p 相等时, 即 p'  = p 时, 就不能直接画 D0 到 D1 的 虚线了。
+        但我们能从 C0 再画一条直线表示某个  p 不做任何 step 的 admissible run, 这个 run 必然也是个 deciding run (因为P的定义)。 记为 C0 经 σ 到 A, σ 中的每个 e'' 对应的 p'' != p
+</code></pre></div></div>
+
+<hr />
+<h1 id="最终证明-theorem-1">最终证明 THEOREM 1</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>构造法。
+从 inital bivalent C 出发, 任选某个 e, 能构造出 集合大D, 选中其中的 bivalent Configuration  D'
+必然能从 C --σ--&gt; ? --e--&gt; D'
+然后再从 D' 出发, 到 D'', 依此类推。
+Q.E.D
+</code></pre></div></div>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2019-05-02T00:00:00+08:00">May 2, 2019</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Flp%20http%3A%2F%2F0.0.0.0%3A4000%2FFLP%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2FFLP%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2FFLP%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/%E6%97%A0%E9%94%81%E9%98%9F%E5%88%97/" class="pagination--pager" title="无锁队列
+">Previous</a>
+    
+    
+      <a href="/TestBlog/" class="pagination--pager" title="Testblog
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You May Also Enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/TestBlog/" rel="permalink">Testblog
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+test blog;
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%E6%97%A0%E9%94%81%E9%98%9F%E5%88%97/" rel="permalink">无锁队列
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 MyBLOG. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
