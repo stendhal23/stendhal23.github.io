@@ -1,6 +1,6 @@
 ## GC 算法之 copying collector
 
-- ⚛️ 比如 Java 的 GC ⚛️
+- ⚛️ 通用的 GC 算法, 不限于语言 ⚛️
 
 ## 结论与事实
 
