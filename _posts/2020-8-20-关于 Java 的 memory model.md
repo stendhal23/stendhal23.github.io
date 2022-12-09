@@ -24,7 +24,7 @@
   >
 - 那什么是 conflicting access?
 
-  - 答: 两个访问同一个 variable 的 access 行为, 且这两个行为中至少一个为 write, 则称两个 access  conflicting.  //所以 非 heap 上的 variable is free of conflicting, 于是也 free of data race.
+  - 答: 两个访问同一个 variable 的 access 行为, 且这两个行为中至少一个为 write, 则称两个 access  conflicting.
 
   > Two accesses to (reads of or writes to) the same variable are said to be *conflicting* if at least one of the accesses is a write.
   >
