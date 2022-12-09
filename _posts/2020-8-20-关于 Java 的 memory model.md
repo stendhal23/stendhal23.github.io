@@ -51,7 +51,7 @@
   > operations to multiple locations with respect to all processors.
   >
 
-  - 即, coherence 保证所有 cpu 要么对单个 register x, 要么统一是这个顺序:  write_x_1,  write_x_2, 要么统一是这个顺序: write_x_2,  write_x_1 ;
+  - 即, coherence 保证所有 cpu 对单个 register x, 要么统一是这个顺序:  write_x_1,  write_x_2, 要么统一是这个顺序: write_x_2,  write_x_1 ;
   - 而如果加入另一个 register y,  只有 coherence protocol 的情况下, 下面的顺序是可能的:
   - 对 cpu 0 而言, 有  write_x_1,   write_y_a,   write_x_2,  write_y_b;
   - 对 cpu 1 而言, 有  write_y_a,   write_x_1,   write_x_2,  write_y_b;
