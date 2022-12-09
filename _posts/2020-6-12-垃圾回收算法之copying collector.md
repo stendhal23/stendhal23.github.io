@@ -7,7 +7,7 @@
 - 这类型算法的思路为: reclaim objects that are no longer *reachable* from a  *root set* .
   - root set 主要为函数栈上的 pointers.
 - copying collector 需要两个内存区域, 一个称为 old space, 一个称为 new space
-- 当 scan pointer 追上 allocate pointer 时, GC 完成
+- 当 scan pointer 追上 allocate pointer 时, GC 完成.
 - GC 完成: 意味着, 所有存活的对象已被复制到新区域, 且这些对象的中所有 pointer 类型的值皆已更新为新区域中的对象的地址。
 
 ## 过程
