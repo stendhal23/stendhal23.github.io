@@ -8,7 +8,7 @@
   - root set 主要为函数栈上的 pointers.
 - copying collector 需要两个内存区域, 一个称为 old space, 一个称为 new space
 - 当 scan pointer 追上 allocate pointer 时, GC 完成
-- GC 完成: 意味着, 所有存活的对象已被复制到新区域, 且这些对象的中所有 pointer 类型的值皆已更新为指向新区域中的对象
+- GC 完成: 意味着, 所有存活的对象已被复制到新区域, 且这些对象的中所有 pointer 类型的值皆已更新为新区域中的对象的地址。
 
 ## 过程
 
@@ -31,7 +31,6 @@ else
 
 ```
 
-
 - 直到 root set 全部检查完毕。 此时,  allocate pointer 已经 advance 到很远的位置, 但是 scan pointer 还没动, 依然在初始位置。
 - 然后检查 scan pointer 指向的 "下一个已 copy 到 new space 但未 scan 的 object"
 - scan 的过程:  检查该 object 的所有 component, 如果是 pointer 类型的, 则依然是用  "伪代码 1"  中的处理逻辑
@@ -51,9 +50,6 @@ else
     old space = eden + survivor B
     new space  = survivor A
   - 循环往复.
-
-
-
 
 ```
 
