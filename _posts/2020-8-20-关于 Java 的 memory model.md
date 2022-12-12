@@ -5,7 +5,7 @@
 
 ## 结论与事实
 
-- Java 提供的 memory model 是 "有条件的顺序一致性 ( sequential consistency )"
+- Java 提供的 memory model 是 "有条件的顺序一致性"  (顺序一致性指术语 sequential consistency , 该概念有严格定义, 本文假设读者已经理解该定义)
 - happens-before 是一个定义在 a set of operation 上的二元关系, 而且是个偏序关系.
 - 是否存在 data race 是由 happens-before 关系来界定。
 
