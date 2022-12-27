@@ -1,5 +1,3 @@
-
-
 - ⚛️ 很多时候,我们知道一些分离的知识, 但是这些知识怎么联系起来呢? ⚛️
 - ⚛️ 比如 data race, volatile, happens-before, MESI, 这些有什么联系吗? ⚛️
 
@@ -12,7 +10,7 @@
 ## 解释
 
 - 下面涉及到的 quote 皆来自于 [JLS](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html)
-- 直接结论:  如果一个 java 程序没有 data race, 则 java 保证程序是 sequentially consistent
+- 直接结论:  如果一段 java 程序没有 data race, 则 java 保证程序是 sequentially consistent
 
   > If a program has no data races, then all executions of the program will appear to be sequentially consistent.
   >
@@ -24,7 +22,7 @@
   >
 - 那什么是 conflicting access?
 
-  - 答: 两个访问同一个 variable 的 access 行为, 且这两个行为中至少一个为 write, 则称两个 access  conflicting.
+  - 答: 访问同一个 variable 的两个 access 行为, 且这两个行为中至少一个为 write, 则称两个 access  conflicting.
 
   > Two accesses to (reads of or writes to) the same variable are said to be *conflicting* if at least one of the accesses is a write.
   >
